@@ -37,3 +37,17 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 4. Install node_modules `$ npm i`
 5. Create and config `.gitignore` file
 6. Create a server file with the name `server.js` file
+
+## `MongoDB Cloud Setup`
+
+1. Create Account or Sign In to [https://www.mongodb.com/](https://www.mongodb.com/)
+2. Click `Project` > + `New Project`
+3. Name Your Project by `whatsapp-web-clone-backend`, Click `Next` button
+4. In Add Member just Click `Create Project`
+5. On Cluster Area Click `Build a Cluster` button
+6. Choose Shared Clusters and click `Create a Cluster` button
+7. Choose `AWS` for Cloud Provider and choose `N. Virgiana` for Region
+8. Choose `M0 Sandbox (Shared RAM, 512 MB Storage)` in Cluster Tier
+9. Choose `MongoDB 4.2, No Backup` in Additional Settings
+10. Choose `Cluster0` in Cluster Name
+11. Click `Create Cluster` button
