@@ -51,3 +51,10 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 9. Choose `MongoDB 4.2, No Backup` in Additional Settings
 10. Choose `Cluster0` in Cluster Name
 11. Click `Create Cluster` button
+
+## `Run Project with Nodemon`
+
+1. Install nodemon `$ npm i -g nodemon`, if you already have, no need install
+2. To check nodemon just type `$ nodemon --version`
+3. Run the Project `nodemon server.js`
+4. Open from web browser [http://localhost:5000](http://localhost:5000)
