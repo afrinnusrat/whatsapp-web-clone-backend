@@ -34,3 +34,4 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 - Is this OK? (yes) `Enter aja`
 
 3. Install express and mongoose `$ npm i express mongoose`
+4. Install node_modules `$ npm i`
