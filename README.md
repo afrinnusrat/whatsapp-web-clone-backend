@@ -58,3 +58,46 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 2. To check nodemon just type `$ nodemon --version`
 3. Run the Project `nodemon server.js`
 4. Open from web browser [http://localhost:5000](http://localhost:5000)
+
+## `MongoDB Cloud - Database Setup`
+
+#### Database Access
+
+1. Click `Database Access` button
+2. Click `Add New Database User` button
+3. Authentication Method -> `Password`
+4. Password Authentication
+
+- username: `admin`
+- password: `EYsaSMDTFoqIzrU3` (to get the password, click `Autogenerate Secure Password` button)
+
+5. Click `Add User` button
+
+#### Network Access
+
+1. Click `Network Access` button
+2. Click `Add an IP address` button
+3. Click `ALLOW ACCESS FROM ANYWHERE`
+4. Click `Confirm` button
+
+#### Clusters setup
+
+1. Click `Clusters` button
+2. Click `CONNECT` button
+3. Choose a connection method -> `Connect your application`
+4. Copy string in the box of `Add your connection string into your application code` -> `mongodb+srv://admin:<password>@cluster0.xgclt.mongodb.net/<dbname>?retryWrites=true&w=majority`
+5. Click `Close` button
+6. Paste and edit to server.js, looks like
+
+```
+// importing
+import mongoose from "mongoose";
+
+// DB Config
+const connection_url = "mongodb+srv://admin:EYsaSMDTFoqIzrU3@cluster0.xgclt.mongodb.net/admin?retryWrites=true&w=majority"
+mongoose.connect(connection_url, {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+```
