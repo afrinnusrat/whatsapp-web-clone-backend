@@ -32,3 +32,5 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 - author: wilden `type your name, for example wilden`
 - licence: (ISC) `Enter aja`
 - Is this OK? (yes) `Enter aja`
+
+3. Install express and mongoose `$ npm i express mongoose`
