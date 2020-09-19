@@ -110,3 +110,23 @@ mongoose.connect(connection_url, {
 - Setup to GET request
 - Fill the request url with `http://localhost:5000/` and click SEND
 - Have a look the result in Body tab
+
+2. `POST` request
+
+- Open postman
+- Setup to POST request
+- Fill the request url with http://localhost:9000/v2/posts
+- Click `Body` > `raw` > change form `Text` to `JSON(application/json)`
+- Fill with
+
+```
+{
+	"message": "heeey anjaay it works",
+	"name": "Mang Ali",
+	"timestamp": "Im a demo timestamp...",
+  "received": false
+}
+```
+
+- Click `Send` button
+- Have a look for result
