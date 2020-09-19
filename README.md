@@ -169,3 +169,8 @@ pusher.trigger('my-channel', 'my-event', {
   'message': 'hello world'
 });
 ```
+
+11. Test the pusher
+
+- Open postman
+- Use Post Request like point `## Postman` no 2, can change data body and try again
