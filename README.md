@@ -137,3 +137,16 @@ mongoose.connect(connection_url, {
 - Setup to GET request
 - Fill the request url with `http://localhost:5000/messages/sync` and click SEND
 - Have a look the result in Body tab
+
+## `PUSHER`
+
+To make database (mongodb) realtime katanya sih gitu
+
+1. Open [https://pusher.com/](https://pusher.com/)
+2. Sign in / Sign up
+3. In Channels box click `Get started` button
+4. Fill the name your app with name `whatsapp-web-clone`
+5. Select a cluster `ap1 (Asia Pasific (Singapore))`
+6. Change Front end to be `React`
+7. Change Back end to be `Node.js`
+8. Click `Create app` button
