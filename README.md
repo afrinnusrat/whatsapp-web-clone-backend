@@ -130,3 +130,10 @@ mongoose.connect(connection_url, {
 
 - Click `Send` button
 - Have a look for result
+
+3. To check `GET` sync Request with Postman
+
+- Open postman
+- Setup to GET request
+- Fill the request url with `http://localhost:5000/messages/sync` and click SEND
+- Have a look the result in Body tab
