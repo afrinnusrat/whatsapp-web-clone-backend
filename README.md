@@ -101,3 +101,12 @@ mongoose.connect(connection_url, {
   useUnifiedTopology: true,
 })
 ```
+
+## `Postman`
+
+1. To check `GET` Request with Postman
+
+- Open postman
+- Setup to GET request
+- Fill the request url with `http://localhost:5000/` and click SEND
+- Have a look the result in Body tab
