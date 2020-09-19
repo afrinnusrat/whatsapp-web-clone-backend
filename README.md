@@ -174,3 +174,9 @@ pusher.trigger('my-channel', 'my-event', {
 
 - Open postman
 - Use Post Request like point `## Postman` no 2, can change data body and try again
+
+12. Check Debug Console on pusher.com
+
+- Open [https://pusher.com/](https://pusher.com/)
+- Going to your project
+- Click `Debug Console`
