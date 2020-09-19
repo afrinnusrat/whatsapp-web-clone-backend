@@ -150,3 +150,22 @@ To make database (mongodb) realtime katanya sih gitu
 6. Change Front end to be `React`
 7. Change Back end to be `Node.js`
 8. Click `Create app` button
+9. Install pusher `$ npm install pusher`
+10. Copy script in Node.js side, the script look like following below<br/>
+    Paste and edit to server.js that script
+
+```
+var Pusher = require('pusher');
+
+var pusher = new Pusher({
+  appId: '1075945',
+  key: '5967c078021a0ed38791',
+  secret: '83285372f17a7e2daaaf',
+  cluster: 'ap1',
+  encrypted: true
+});
+
+pusher.trigger('my-channel', 'my-event', {
+  'message': 'hello world'
+});
+```
