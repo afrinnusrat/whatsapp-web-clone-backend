@@ -115,7 +115,7 @@ mongoose.connect(connection_url, {
 
 - Open postman
 - Setup to POST request
-- Fill the request url with http://localhost:9000/v2/posts
+- Fill the request url with `http://localhost:5000/messages/new`
 - Click `Body` > `raw` > change form `Text` to `JSON(application/json)`
 - Fill with
 
