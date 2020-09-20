@@ -181,7 +181,7 @@ pusher.trigger('my-channel', 'my-event', {
 - Going to your project
 - Click `Debug Console`
 
-## Install CORS
+## `Install CORS`
 
 cors ini penggantinya
 
