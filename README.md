@@ -180,3 +180,19 @@ pusher.trigger('my-channel', 'my-event', {
 - Open [https://pusher.com/](https://pusher.com/)
 - Going to your project
 - Click `Debug Console`
+
+## Install CORS
+
+cors ini penggantinya
+
+```
+// security messages
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  next();
+});
+```
+
+1. Install cors `$ npm i cors`
+2. Type some script to server.js

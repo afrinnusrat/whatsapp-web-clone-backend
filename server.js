@@ -3,6 +3,7 @@ import express from "express";
 import mongoose from "mongoose";
 import Messages from "./dbMessages.js";
 import Pusher from "pusher";
+import cors from "cors";
 
 // app config
 const app = express();
@@ -18,6 +19,7 @@ const pusher = new Pusher({
 
 // middleware
 app.use(express.json());
+app.use(cors());
 
 // DB config
 const connection_url =
@@ -54,13 +56,6 @@ db.once("open", () => {
 
 // api routes
 app.get("/", (req, res) => res.status(200).send("hellow woow"));
-
-// security messages
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Headers", "*");
-  next();
-});
 
 // POST
 app.post("/messages/new", (req, res) => {
